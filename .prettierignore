@@ -1,0 +1,3 @@
+# Ignore Markdown files because using Nunjucks
+*.md
+!README.md
