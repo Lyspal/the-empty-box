@@ -1,17 +1,26 @@
 {
-  "name": "11ty-template",
+  "name": "the-empty-box",
   "version": "0.1.0",
-  "description": "A basic template for an 11ty project.",
-  "main": "index.js",
+  "description": "A simple one-page website to sell an empty box.",
+  "main": "_site/index.html",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyspal/the-empty-box.git"
+  },
+  "author": {
+    "name": "Sylvain Laporte",
+    "email": "laporte.sylvain@lyspal.com",
+    "url": "https://www.lyspal.com"
+  },
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "@fortawesome/fontawesome-free": "^6.2.1"
   }
 }

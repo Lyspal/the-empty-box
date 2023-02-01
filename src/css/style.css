@@ -1,3 +1,102 @@
-h1 {
-  color: blue;
+:root {
+  --color-primary: #1cc76c;
+  --color-secondary: #f7fcff;
+  --color-tertiary: #07080a;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--color-tertiary);
+}
+
+/* Banner */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-tertiary);
+}
+/* @media screen and (min-width: 768em) {
+  .banner {
+    flex-direction: row;
+  }
+} */
+
+.banner .logo {
+  margin: 1rem;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: var(--color-secondary);
+  text-align: center;
+  text-decoration: none;
+}
+
+.banner .logo span {
+  margin-left: 0.4rem;
+}
+
+.banner .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+}
+
+.banner .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner .navbar ul li a {
+  color: var(--color-tertiary);
+}
+
+/* Main content */
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+}
+
+footer .copyright {
+  margin: 1rem 0.5rem 0.5rem;
+  color: var(--color-secondary);
+}
+
+footer ul {
+  display: flex;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+footer ul li:first-child {
+  padding-right: 0.5rem;
+  border-right: 1px solid var(--color-secondary);
+  margin-right: 0.5rem;
 }
