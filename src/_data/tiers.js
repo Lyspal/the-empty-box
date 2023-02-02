@@ -1,20 +1,22 @@
 module.exports = [
   {
-    name: "Tier 1",
-    description: "This is the description for Tier 1",
-    price: "100",
+    name: "Basic Box",
+    description: "A simple, virtual container for all your digital items.",
+    price: "25",
     imageUrl: "https://via.placeholder.com/150"
   },
   {
-    name: "Tier 2",
-    description: "This is the description for Tier 2",
-    price: "200",
+    name: "Premium Box",
+    description:
+      "A customizable, secure virtual storage solution with added features.",
+    price: "60",
     imageUrl: "https://via.placeholder.com/150"
   },
   {
-    name: "Tier 3",
-    description: "This is the description for Tier 3",
-    price: "300",
+    name: "Ultimate Box",
+    description:
+      "A fully-featured digital storage and organization tool with top-level security and accessibility.",
+    price: "120",
     imageUrl: "https://via.placeholder.com/150"
   }
 ];
