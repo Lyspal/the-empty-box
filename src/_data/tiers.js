@@ -1,22 +1,21 @@
 module.exports = [
   {
-    name: "Basic Box",
-    description: "A simple, virtual container for all your digital items.",
+    name: "Basic Empty Box",
+    description: "A simple, virtual container with nothing in it.",
     price: "25",
     imageUrl: "https://via.placeholder.com/150"
   },
   {
-    name: "Premium Box",
-    description:
-      "A customizable, secure virtual storage solution with added features.",
-    price: "60",
+    name: "Premium Empty Box",
+    description: "A spacious virtual storage solution with nothing in it.",
+    price: "100",
     imageUrl: "https://via.placeholder.com/150"
   },
   {
-    name: "Ultimate Box",
+    name: "Ultimate Empty Box",
     description:
-      "A fully-featured digital storage and organization tool with top-level security and accessibility.",
-    price: "120",
+      "A fully-featured digital storage and organization tool with nothing in it.",
+    price: "500",
     imageUrl: "https://via.placeholder.com/150"
   }
 ];
