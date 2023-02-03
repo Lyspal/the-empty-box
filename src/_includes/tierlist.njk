@@ -9,14 +9,14 @@
 				alt="{{ tier.product.name }}">
 			<p>{{ tier.product.description }}</p>
 			<p>{{ tier.unit_amount | centsToDollars }} {{ tier.currency.toUpperCase() }}</p>
-			<form action="" method="POST">
+			<form action="/.netlify/functions/create-checkout-session" method="POST">
 				<input 
 					class="hidden"
 					type="hidden"
 					value="{{ tier.id }}"
-					name="tier_id"
+					name="tierId"
 				/>
-				<button type="submit">Buy Now</b>
+				<button type="submit" role="link">Buy Now</b>
 			</form>
 		</li>
 		{% endfor %}
