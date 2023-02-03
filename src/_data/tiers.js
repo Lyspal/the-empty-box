@@ -1,21 +1,9 @@
-module.exports = [
-  {
-    name: "Basic Empty Box",
-    description: "A simple, virtual container with nothing in it.",
-    price: "25",
-    imageUrl: "https://via.placeholder.com/150"
-  },
-  {
-    name: "Premium Empty Box",
-    description: "A spacious virtual storage solution with nothing in it.",
-    price: "100",
-    imageUrl: "https://via.placeholder.com/150"
-  },
-  {
-    name: "Ultimate Empty Box",
-    description:
-      "A fully-featured digital storage and organization tool with nothing in it.",
-    price: "500",
-    imageUrl: "https://via.placeholder.com/150"
-  }
-];
+const stripe = require("stripe")(process.env.STRIPE_TEST_KEY);
+
+module.exports = async function () {
+  const response = await stripe.prices.list({
+    expand: ["data.product"]
+  });
+  console.log(response.data);
+  return response.data;
+};

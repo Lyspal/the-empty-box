@@ -7,7 +7,8 @@ title: The Empty Box
   <div class="hero__content">
     <h1 class="hero__title">Emptiness is fulfilling</h1>
     <p class="hero__description">
-        Consumption drives our economy. What if you could buy <span class="emphasis">nothing</span>?
+      Consumption drives our economy. What if you could buy
+      <span class="emphasis">nothing</span>?
     </p>
   </div>
   <div>
@@ -19,29 +20,23 @@ title: The Empty Box
   </div>
 </section>
 <section class="description">
-	<h2 class="description-title">An box full of nothing delivered to you digitally</h2>
-	<p class="description-text">
-		All the joy of buying something with no more clutter, no more waste, no more guilt. Just an empty box.
-	</p>
+  <h2 class="description-title">
+    An box full of nothing delivered to you digitally
+  </h2>
+  <p class="description-text">
+    All the joy of buying something with no more clutter, no more waste, no
+    more guilt. Just an empty box.
+  </p>
 </section>
 <section class="features">
-	{% for feature in features %}
-	<div class="feature">
-		<h3>{{ feature.title }}</h3>
-		<p>{{ feature.description }}</p>
-	</div>
-	{% endfor %}
+  {% for feature in features %}
+  <div class="feature">
+    <h3>{{ feature.title }}</h3>
+    <p>{{ feature.description }}</p>
+  </div>
+  {% endfor %}
 </section>
 <section class="tier-buy">
-	<h2 class="tier-buy-title">Buy an empty box today</h2>
-	{% for tier in tiers %}
-	<div class="tier-item">
-		<h3>{{ tier.name }}</h3>
-		<img src="{{ tier.imageUrl | url }}" alt="{{ tier.name }}">
-		<p>{{ tier.description }}</p>
-		<p>{{ tier.price }}</p>
-		<button href="{{ tier.url  | url }}">Buy Now</b>
-	</div>
-	{% endfor %}
-	</div>
+  <h2 class="tier-buy-title">Buy an empty box today</h2>
+  {% include "tierlist.njk" %}
 </section>

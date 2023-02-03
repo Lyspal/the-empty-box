@@ -1,0 +1,24 @@
+{% if tiers.length %}
+	<ul class="tier-list">
+		{% for tier in tiers %}
+		<li class="tier-item">
+			<h3>{{ tier.product.name }}</h3>
+			<img
+				src="{{ tier.product.images }}"
+				srcset="{{ tier.product.images }}"
+				alt="{{ tier.product.name }}">
+			<p>{{ tier.product.description }}</p>
+			<p>{{ tier.unit_amount }}</p>
+			<form action="" method="POST">
+				<input 
+					class="hidden"
+					type="hidden"
+					value="{{ tier.id }}"
+					name="tier_id"
+				/>
+				<button type="submit">Buy Now</b>
+			</form>
+		</li>
+		{% endfor %}
+	</ul>
+{% endif %}
