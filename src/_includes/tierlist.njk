@@ -8,7 +8,7 @@
 				srcset="{{ tier.product.images }}"
 				alt="{{ tier.product.name }}">
 			<p>{{ tier.product.description }}</p>
-			<p>{{ tier.unit_amount }}</p>
+			<p>{{ tier.unit_amount | centsToDollars }} {{ tier.currency.toUpperCase() }}</p>
 			<form action="" method="POST">
 				<input 
 					class="hidden"

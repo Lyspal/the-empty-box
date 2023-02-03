@@ -4,6 +4,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets/");
 
+  // Filters
+  eleventyConfig.addFilter("centsToDollars", (cents) => {
+    return (cents / 100).toFixed(2);
+  });
+
   return {
     dir: {
       input: "src",
