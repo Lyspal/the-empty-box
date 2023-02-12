@@ -1,32 +1,20 @@
-:root {
-  --color-primary: #1cc76c;
-  --color-secondary: #f7fcff;
-  --color-tertiary: #07080a;
-}
-
 body {
-  width: 100%;
-  margin: 0 auto;
-  color: var(--color-tertiary);
-}
-
-/* Banner */
-
-header {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-tertiary);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
 }
-/* @media screen and (min-width: 768em) {
-  .banner {
-    flex-direction: row;
-  }
-} */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
 
 .banner .logo {
   margin: 1rem;
   font-size: 1.6em;
-  font-weight: bold;
+  font-weight: 800;
   color: var(--color-secondary);
   text-align: center;
   text-decoration: none;
@@ -38,65 +26,60 @@ header {
 
 .banner .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
-}
-
-.banner .navbar ul {
-  display: flex;
   justify-content: space-between;
-  width: 50%;
-  list-style: none;
-  padding: 0;
+  padding: 1rem 2rem;
+}
+
+.banner .navbar .navmenu {
+  display: flex;
+  width: 60%;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.banner .navbar ul li a {
-  color: var(--color-tertiary);
+.banner .navbar .navmenu li {
+  margin-right: 1.5rem;
 }
 
-/* Main content */
+.banner .navbar .navmenu li:last-child {
+  margin-right: 0;
+}
 
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
   text-align: center;
 }
 
 section {
-  padding: 1rem 0;
+  margin: 1rem 1.5rem;
 }
 
-/* Footer */
-
 footer {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-primary);
+  justify-content: end;
+  padding-top: 1rem;
+  font-size: 0.8em;
 }
 
 footer .copyright {
-  margin: 1rem 0.5rem 0.5rem;
-  color: var(--color-secondary);
+  margin: 0 1rem 0.25rem;
 }
 
-footer ul {
-  display: flex;
-  margin: 0.5rem 0.5rem 2rem;
+footer .footer-nav {
+  margin: 0.25rem 1rem 2rem;
   padding: 0;
   list-style: none;
 }
 
-footer ul li a {
-  color: var(--color-secondary);
-  text-decoration: none;
+footer .footer-nav li {
+  margin: 0.25rem 0;
 }
 
-footer ul li:first-child {
-  padding-right: 0.5rem;
-  border-right: 1px solid var(--color-secondary);
-  margin-right: 0.5rem;
+footer .footer-nav li:last-child {
+  margin: 0;
 }
