@@ -17,12 +17,12 @@
         <span>The Empty Box</span>
       </a>
       <nav class="navbar">
-        <ul>
+        <ul class="navmenu">
           {# <li><a href="{{ '/' | url }}">Home</a></li> #}
           <li><a href="{{ '/about' | url }}">About</a></li>
-          {# <li><a href="{{ '/blog' | url }}">Blog</a></li> #}
+          <li><a href="{{ '/blog' | url }}">Blog</a></li>
         </ul>
-        <button id="buy-btn">Buy Now</button>
+        <a class="nav-buy-btn" href="/#tier-buy">Buy Now</a>
       </nav>
     </header>
     <main>
@@ -30,7 +30,7 @@
     </main>
     <footer>
       <p class="copyright">&copy; 2023 The Empty Box</p>
-      <ul>
+      <ul class="footer-nav">
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
       </ul>
