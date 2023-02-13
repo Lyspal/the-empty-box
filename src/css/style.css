@@ -13,6 +13,7 @@
 body {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
@@ -61,7 +62,6 @@ h3 {
   padding: 1rem 1.5rem;
   font-size: 1.2em;
   font-weight: 600;
-  /* background-color: var(--color-primary); */
 }
 
 .banner .navbar .nav-buy-btn {
@@ -106,18 +106,37 @@ section {
   padding: 1.5rem;
 }
 
-.hero {
+.hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.hero .hero-content {
+.hero .hero-container .hero-content {
   margin: 0 0 1rem 0;
 }
+@media screen and (min-width: 768px) {
+  .hero .hero-container .hero-content {
+    width: 30rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+}
 
-.hero .hero-image {
+.hero .hero-container .hero-description {
+  font-size: 1.2em;
+}
+
+.hero .hero-container .hero-image-container {
   margin: 1rem 0;
 }
 
@@ -126,25 +145,70 @@ section {
   color: var(--color-secondary);
 }
 
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* .description .description-text {
+  max-width: 55rem;
+  margin: 1em auto;
+} */
+
+.feature-list {
   background-color: var(--color-primary);
 }
 
-.tier-buy {
+.feature-list .features {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 796px) {
+  .feature-list .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.feature-list .features .feature {
+  max-width: 55rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .feature-list .features .feature {
+    max-width: 27rem;
+  }
+}
+
+.tier-buy .tier-buy-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1084px) {
+  .tier-buy .tier-buy-items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .tier-buy .tier-item {
-  margin: 0.5rem 0;
+  max-width: 20rem;
+  margin: 1rem;
   padding: 1rem;
   border: 8px dotted var(--color-primary);
+}
+@media screen and (min-width: 426px) {
+  .tier-buy .tier-item {
+    width: 20rem;
+  }
+}
+
+.tier-buy .tier-item .tier-description {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tier-buy .tier-item .tier-buy-btn {
