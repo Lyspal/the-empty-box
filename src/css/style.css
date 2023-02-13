@@ -141,6 +141,12 @@ section {
   margin: 1rem 0;
 }
 
+.hero .hero-container .hero-image-container .hero-image {
+  width: 384px;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .description {
   background-color: var(--color-tertiary);
   color: var(--color-secondary);
@@ -200,6 +206,12 @@ section {
   #tier-buy .tier-item {
     width: 20rem;
   }
+}
+
+#tier-buy .tier-item .tier-image {
+  width: 250px;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #tier-buy .tier-item .tier-description {

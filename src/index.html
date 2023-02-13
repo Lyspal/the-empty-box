@@ -14,7 +14,7 @@ title: The Empty Box
 		<div class="hero-image-container">
 			<img
 			class="hero-image"
-			src="https://via.placeholder.com/250"
+			src="assets/images/box2-wood.png"
 			alt="A photo of an empty box."
 			/>
 		</div>
@@ -43,7 +43,7 @@ title: The Empty Box
 		{% for tier in tiers %}
 		<div class="tier-item">
 			<h3>{{ tier.name }}</h3>
-			<img src="{{ tier.imageUrl | url }}" alt="{{ tier.name }}">
+			<img class="tier-image" src="{{ tier.imageUrl | url }}" alt="{{ tier.name }}">
 			<p class="tier-description">{{ tier.description }}</p>
 			<p>{{ tier.price }}</p>
 			<button class="tier-buy-btn" href="{{ tier.url  | url }}">Buy Now</b>
