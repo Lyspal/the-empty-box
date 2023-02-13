@@ -12,7 +12,7 @@ A simple static website to sell an empty box.
 
 ## Results
 
-- The final live website is available [here](https://the-empty-box.com).
+- The final live website is available [here](https://effulgent-puffpuff-7e64a1.netlify.app/).
 
 ## Technologies
 
@@ -53,10 +53,12 @@ A simple static website to sell an empty box.
 
 - Make it functional.
 - Get the main website, About, TOS, PP, and one payment method.
+- Make responsive, mobile-first.
 - Implement a basic design.
 
 ### 0.2.0 (in progress)
 
 - Make it SEO friendly.
+- Improve the design.
 - Update the blog.
 - Add email delivery for digital product.
