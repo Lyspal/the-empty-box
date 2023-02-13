@@ -86,6 +86,7 @@ h3 {
 
 .banner .navbar .navmenu li {
   margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 .banner .navbar .navmenu li:last-child {
