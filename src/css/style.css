@@ -100,7 +100,12 @@ h3 {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 60vh;
   text-align: center;
+}
+
+main > p {
+  padding: 0 1.5rem;
 }
 
 section {
