@@ -181,16 +181,17 @@ section {
   }
 }
 
-#tier-buy .tier-buy-items {
+#tier-buy .tier-buy-items .tier-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 90rem;
   margin: 0 auto;
+  list-style: none;
 }
 @media screen and (min-width: 1084px) {
-  #tier-buy .tier-buy-items {
+  #tier-buy .tier-buy-items .tier-list {
     flex-direction: row;
     justify-content: space-between;
   }

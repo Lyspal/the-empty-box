@@ -4,5 +4,10 @@ module.exports = async function () {
   const response = await stripe.prices.list({
     expand: ["data.product"]
   });
-  return response.data;
+
+  let data = response.data.filter((product) => product.active);
+
+  data.sort((a, b) => a.unit_amount - b.unit_amount);
+
+  return data;
 };

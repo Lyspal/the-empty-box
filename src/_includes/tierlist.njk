@@ -3,11 +3,11 @@
 		{% for tier in tiers %}
 		<li class="tier-item">
 			<h3>{{ tier.product.name }}</h3>
-			<img
+			<img class="tier-image"
 				src="{{ tier.product.images }}"
 				srcset="{{ tier.product.images }}"
 				alt="{{ tier.product.name }}">
-			<p>{{ tier.product.description }}</p>
+			<p class="tier-description">{{ tier.product.description }}</p>
 			<p>{{ tier.unit_amount | centsToDollars }} {{ tier.currency.toUpperCase() }}</p>
 			<form action="/.netlify/functions/create-checkout-session" method="POST">
 				<input 
@@ -16,7 +16,7 @@
 					value="{{ tier.id }}"
 					name="tierId"
 				/>
-				<button type="submit" role="link">Buy Now</b>
+				<button class="tier-buy-btn" type="submit" role="link">Buy Now</b>
 			</form>
 		</li>
 		{% endfor %}
