@@ -2,8 +2,6 @@
 layout: base.njk
 ---
 
+<h2>{{ title }}</h2>
+<h4>Published on: {{ page.date.toDateString() }}</h4>
 {{ content | safe }}
-
-<footer>
-    <p>Published on: {{ page.date.toDateString() }}</p>
-</footer>

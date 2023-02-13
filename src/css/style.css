@@ -109,6 +109,10 @@ main > p {
   padding: 0 1.5rem;
 }
 
+main > ul {
+  text-align: left;
+}
+
 section {
   padding: 1.5rem;
 }
