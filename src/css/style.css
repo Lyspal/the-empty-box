@@ -147,9 +147,16 @@ section {
 }
 
 .hero .hero-container .hero-image-container .hero-image {
-  width: 384px;
+  width: 256px;
   border-radius: 0.25rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 425px) {
+  .hero .hero-container .hero-image-container .hero-image {
+    width: 384px;
+  }
+}
+  
 }
 
 .description {
@@ -216,9 +223,14 @@ section {
 }
 
 #tier-buy .tier-item .tier-image {
-  width: 250px;
+  width: 128px;
   border-radius: 0.25rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 426px) {
+  #tier-buy .tier-item .tier-image {
+    width: 256px;
+  }
 }
 
 #tier-buy .tier-item .tier-description {
